@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+private static \$allowed_actions = array (
+    '${1:show}'
+);
+
+public function ${1}(SS_HTTPRequest \$request) {
+    \$id = \$request->param('ID');
+
+    // retrieve the ${2:Object} as \$data
+    \$data = ${2}::get()->byID(\$id);
+    ${0}
+
+    if(!\$data) {
+        return \$this->httpError(404,'That ${2} id could not be found');
+    }    
+
+	return array (
+        '${2}' => \$data
+    );
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>show</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

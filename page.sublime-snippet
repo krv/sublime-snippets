@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<?php
+class ${1:PageType} extends ${2:Page} {
+	// array('Page')
+    private static \$allowed_children = 'none'; 
+    private static \$can_be_root = false;
+	
+    ${0}
+}
+
+class ${1:PageType}_Controller extends ${2}_Controller {
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>page</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

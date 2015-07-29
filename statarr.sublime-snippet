@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+private static \$${1:name} = array(
+  	'${2:Object}' => '${3:ObjectType}'
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>statarr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

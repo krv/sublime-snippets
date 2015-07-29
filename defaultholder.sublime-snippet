@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+	public function populateDefaults() {
+       \$holderid = DataObject::get_one("${1:PageHolder}");
+       \$this->${1}ID = \$holderid->ID;
+       parent::populateDefaults();
+    }
+    ${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>defaultholder</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

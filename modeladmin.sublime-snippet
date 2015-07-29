@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php
+class ${1:Object}Admin extends ModelAdmin {
+  	private static \$managed_models = array(
+  		'${1}'
+  	);
+
+  private static \$url_segment = '${1/(.*)/\L\1\E/i}s';
+  private static \$menu_title = '${1}s';
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>modeladmin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
